@@ -12,4 +12,4 @@ response = requests.get(url, headers=headers, verify=False)
 data = response.json()
 
 for h in data['instances']:
-    print(f"INSTANCE: {h['id']}\n SERVER IDs: {h['servers']}\n")
+    print(f"INSTANCE: {h['id']}\n SERVER ID(s): {h['servers']}\n")
